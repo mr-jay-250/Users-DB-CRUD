@@ -1,0 +1,3 @@
+1710963189654: ::1 GET from /api/users/65fb27455f3c18a24bf2099b
+1710963196368: ::1 GET from /api/users
+1710963231861: ::1 POST from /api/users
