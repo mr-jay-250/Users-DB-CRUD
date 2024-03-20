@@ -1,0 +1,15 @@
+const fs = require('fs');
+
+const logReqRes = (fileName) => {
+  return (req, res, next) => {
+    fs.appendFile(
+    fileName,
+    `${Date.now()}: ${req.ip} ${req.method} from ${req.path}\n`,
+    (err, data) => {
+      next();
+    }
+  )
+  }
+}
+
+module.exports = { logReqRes }
